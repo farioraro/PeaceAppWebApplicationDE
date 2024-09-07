@@ -1,0 +1,111 @@
+.login-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.login-btn, .register-btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.register-btn {
+  background-color: #007bff;
+}
+
+.main-section {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../../assets/HeroImageWebApplication.png') no-repeat center center;
+  background-size: cover;
+}
+
+.login-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.submit-btn:hover {
+  background-color: #333;
+}
+
+.register-text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.register-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  font-size: 14px;
+}

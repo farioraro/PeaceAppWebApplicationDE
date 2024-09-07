@@ -1,0 +1,63 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.login-btn, .register-btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.register-btn {
+  background-color: #007bff;
+}
+
+.main-section {
+  flex-grow: 1;
+  background: url('../../assets/HeroImageWebApplication.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+}
+
+.title-box {
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 30px;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  font-size: 14px;
+}

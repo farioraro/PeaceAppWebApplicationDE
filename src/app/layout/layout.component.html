@@ -1,0 +1,50 @@
+<div class="layout">
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="assets/logoPeaceApp%202.png" alt="Peace App Logo">
+    </div>
+    <div class="header-right">
+      <button class="profile-btn">
+        <img src="assets/ProfileIcon.png" alt="Profile Icon" />
+      </button>
+      <button class="logout-btn" (click)="onLogout()">Cerrar Sesión</button>
+    </div>
+  </header>
+
+  <!-- Sidebar Menu -->
+  <div class="sidebar">
+    <ul>
+      <li>
+        <button class="menu-btn" [routerLink]="['/map']">
+          <i class="fas fa-map-marker-alt"></i> Mapa
+        </button>
+      </li>
+      <li>
+        <button class="menu-btn" [routerLink]="['/reports']">
+          <i class="fas fa-file-alt"></i> Reportes
+        </button>
+      </li>
+      <li>
+        <button class="menu-btn" [routerLink]="['/share-location']">
+          <i class="fas fa-share-alt"></i> Compartir Ubicación
+        </button>
+      </li>
+      <li>
+        <button class="menu-btn" [routerLink]="['/alerts']">
+          <i class="fas fa-bell"></i> Alertas
+        </button>
+      </li>
+      <li>
+        <button class="menu-btn" [routerLink]="['/report-incident']">
+          <i class="fas fa-exclamation-triangle"></i> Reportar Incidente
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Main Content Area -->
+  <div class="main-content">
+    <router-outlet></router-outlet> <!-- This is where the views (like map) will be rendered -->
+  </div>
+</div>

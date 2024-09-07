@@ -1,0 +1,40 @@
+<div class="login-page">
+  <!-- Background layout from the homepage -->
+  <header class="header">
+    <div class="logo">
+      <img src="assets/logoPeaceApp%202.png" alt="Peace App Logo">
+    </div>
+    <div class="auth-buttons">
+      <button class="login-btn" [routerLink]="['/login']">Iniciar Sesión</button>
+      <button class="register-btn" [routerLink]="['/register']">Registrarse</button>
+    </div>
+  </header>
+
+  <section class="main-section">
+    <div class="login-container">
+      <h2>Iniciar Sesión</h2>
+
+      <form>
+        <div class="form-group">
+          <label for="username">Nombre</label>
+          <input type="text" id="username" placeholder="Ingresa tu nombre" />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" placeholder="Ingresa tu contraseña" />
+        </div>
+
+        <button type="button" class="submit-btn" (click)="onLogin()">Continuar</button>
+      </form>
+
+      <p class="register-text">¿No tienes una cuenta? <a href="#">Regístrate</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Acerca de Nosotros</p>
+    <p>Somos una startup y nos comprometemos a proporcionar un entorno seguro para nuestros usuarios</p>
+    <p>PeaceApp Todos los derechos reservados</p>
+  </footer>
+</div>
